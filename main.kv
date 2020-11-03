@@ -1,0 +1,22 @@
+# import these kivy files (these are not comments since they're written with a :)
+#:include balloon.kv
+#:include pig.kv
+#:include popimage.kv
+#:include popcount.kv
+#:include taptostart.kv
+#:include cloud.kv
+
+# stylizes the MainGame class
+<MainGame>:
+    # this is a FloatLayout which means widgets can be freely placed and moved throughout the screen
+    FloatLayout:
+        # create the background
+        Background:
+            id: background
+            # draw it on the canvas behind everything
+            canvas.before:
+            # make a rectangle fill the whole screen with the background image as the background
+                Rectangle:
+                    size: self.width, self.height
+                    source: "Assets/background.png"
+

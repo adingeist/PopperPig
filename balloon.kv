@@ -1,0 +1,9 @@
+# stylizes the Balloon class
+<Balloon>:
+    canvas.after:
+        # creates each balloon as a rectangle with its own attributes defined in the Balloon class
+        Rectangle:
+            size: self.myWidth, self.myHeight
+            pos: self.position_x, self.position_y
+            source: self.mySource
+

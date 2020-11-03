@@ -1,0 +1,10 @@
+# stylizes the pig class
+<Pig>:
+    # creates the pig on the canvas in the foreground. (I noticed no difference between .before and .after so I
+    # arbitrarily pick them.
+    canvas.after:
+        # creates the pig as a rectangle with attributes defined in the Pig class in main.py
+        Rectangle:
+            size: self.myWidth, self.myHeight
+            pos: self.position_x, self.position_y
+            source: "Assets/pig.png"

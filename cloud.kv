@@ -1,0 +1,10 @@
+# stylize the cloud class
+<Cloud>:
+    # this widget will be drawn on a canvas
+    canvas.before:
+        # the widget is a rectangle
+        Rectangle:
+            # these attributes are defined in the cloud class in main.py
+            pos: self.position_x, self.position_y
+            size: self.myWidth, self.myHeight
+            source: self.mySource

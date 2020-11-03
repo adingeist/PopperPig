@@ -1,0 +1,16 @@
+# stylizes the PopCount class
+<PopCount>:
+    canvas.before:
+        # creates a rectangle for the pop icon
+        Rectangle:
+            pos: self.pop_position_x, self.pop_position_y
+            size: self.popWidth, self.popHeight
+            source: "Assets/balloons_popped_icon.png"
+
+        # creates a rectangle for the misses icon
+        Rectangle:
+            pos: self.miss_position_x, self.miss_position_y
+            size: self.missWidth, self.missHeight
+            source: "Assets/balloons_missed_icon.png"
+
+

@@ -1,0 +1,8 @@
+# stylizes the TapToStart class
+<TapToStart>:
+    canvas.before:
+        Rectangle:
+            # creates a rectangle with attributes calculated in python code
+            size: self.myWidth, self.myHeight
+            pos: self.position_x, self.position_y
+            source: "Assets/press_tutorial_icon_nobg.png"
